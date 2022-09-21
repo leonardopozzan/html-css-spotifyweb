@@ -81,6 +81,7 @@ img{
 .wrapper{
     width: 100%;
     height: 100vh;
+    overflow-y: hidden;
     background-color: pink;
 }
 main{
@@ -99,10 +100,9 @@ footer{
 }
 .nav_bar{
     width: 230px;
-    height: 100%;
+    height: calc(100vh - 80px);
     background-color: var(--black);
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 .upgrade{
     width: calc(100% - 230px);
@@ -146,7 +146,6 @@ footer{
     width: calc(100% / 6);
     padding-right: 1rem;
 }
-
 #famous_artists .card img{
     border-radius: 50%;
 }
@@ -161,7 +160,7 @@ footer{
 .nav_bar section .icon_box:first-child{
     margin-top: 16px;
 }
-.icon_box path{
+.icon_box path, .download_box path{
     fill: var(--grey);
 }
 .icon_box svg{
@@ -181,6 +180,29 @@ footer{
     overflow-y: auto;
     height: 250px;
 }
+#profile{
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    background-color: var(--black);
+    width: 230px;
+    padding: 1rem;
+}
+.download_box svg{
+    height: 1rem;
+    margin-right: 10px;
+}
+.download_box{
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 0.5rem;
+}
+.profile_box svg{
+    height: 1.3rem;
+    background-color: var(--grey);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 /**************** media query ****************/
 @media screen and (max-width:992px){
     :root{
