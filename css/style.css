@@ -1,0 +1,18 @@
+/**************** Utility ****************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --black: rgba(0, 0, 0, 1);
+    --black_05: rgba(0, 0, 0, 0.5);
+    --dark-blue: rgba(20, 25, 34, 1);
+    --dark-grey: rgba(40, 40, 40, 1);
+    --white: rgba(255, 255, 255, 1);
+    --grey: rgba(113, 113, 113, 1);
+    --lime: rgba(173, 255, 47, 1);
+}
