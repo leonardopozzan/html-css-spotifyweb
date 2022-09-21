@@ -23,6 +23,9 @@ a{
 ul{
     list-style: none;
 }
+img{
+    max-width: 100%;
+}
 .flex{
     display: flex;
 }
@@ -34,23 +37,28 @@ ul{
 }
 [class*=title]{
     text-transform: capitalize;
+    font-weight: 700;
 }
 [class^=title]{
     color: var(--white);
-    font-weight: 700;
 }
-.title_1{
-    font-size: 2rem;
-}
-.title_2{
-    font-size: 1.4rem;
-}
-.sub_title_1{
-    font-size: 0.85rem;
+[class*=sub_title]{
     color: var(--grey);
 }
+[class*=title_2]{
+    text-align: center;
+}
+.title_1{
+    font-size: 1.6rem;
+}
+.title_2{
+    font-size: 1.1rem;
+}
+.sub_title_1{
+    font-size: 0.9rem;
+}
 .sub_title_2{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 .txt_white{
     color: var(--white);
@@ -129,3 +137,7 @@ footer{
 }
 
 /**************** sezione brani riprodotti di recente ****************/
+.card{
+    width: calc(100% / 6 - 1rem);
+    padding-right: 1rem;
+}
