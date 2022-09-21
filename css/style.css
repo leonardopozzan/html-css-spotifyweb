@@ -17,9 +17,55 @@ html{
     --lime: rgba(173, 255, 47, 1);
 }
 /**************** Common ****************/
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 .flex{
     display: flex;
 }
+.j_center{
+    justify-content: center;
+}
+.a_it_center{
+    align-items: center;
+}
+[class*=title]{
+    text-transform: capitalize;
+}
+[class^=title]{
+    color: var(--white);
+    font-weight: 700;
+}
+.title_1{
+    font-size: 2rem;
+}
+.title_2{
+    font-size: 1.4rem;
+}
+.sub_title_1{
+    font-size: 0.85rem;
+    color: var(--grey);
+}
+.sub_title_2{
+    font-size: 0.6rem;
+}
+.txt_white{
+    color: var(--white);
+}
+.margin_top_big{
+    margin-top: 3rem;
+}
+.margin_top_md{
+    margin-top: 1.5rem;
+}
+.margin_top_sm{
+    margin-top: 0.75rem;
+}
+
+
 /**************** Layout sezioni ****************/
 .wrapper{
     width: 100%;
@@ -47,11 +93,12 @@ footer{
 }
 .upgrade{
     width: calc(100% - 230px);
-    height: 70px;
+    height: 80px;
     position: fixed;
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
 }
 .main_content{
     width: calc(100% - 230px);
@@ -60,6 +107,25 @@ footer{
 }
 .inner_content{
     height: 100%;
-    padding-top: 80px;
+    padding: 95px 0 0 20px;
     overflow-y: auto;
 }
+
+/**************** barra opaca in alto ****************/
+.upgrade a{
+    color: var(--white);
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    margin-right: 2rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/**************** nav bar del contenuto ****************/
+.nav_content li a{
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+/**************** sezione brani riprodotti di recente ****************/
