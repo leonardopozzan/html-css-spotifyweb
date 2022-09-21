@@ -28,26 +28,26 @@ html{
 }
 main{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-color: orange;
 }
 footer{
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1000;
-    background-color: blue;
+    background-color: var(--dark_grey);
 }
 .nav_bar{
     width: 230px;
     height: 100%;
-    background-color: blueviolet;
+    background-color: var(--black);
 }
 .upgrade{
     width: calc(100% - 230px);
-    height: 100px;
+    height: 70px;
     position: fixed;
     top: 0;
     right: 0;
@@ -55,11 +55,11 @@ footer{
 }
 .main_content{
     width: calc(100% - 230px);
-    height: calc(100vh - 100px);
-    background-color: red;
+    height: 100%;
+    background-color: var(--dark_blue);
 }
 .inner_content{
     height: 100%;
-    padding-top: 110px;
+    padding-top: 80px;
     overflow-y: auto;
 }
