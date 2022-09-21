@@ -36,7 +36,6 @@ img{
     align-items: center;
 }
 [class*=title]{
-    text-transform: capitalize;
     font-weight: 700;
 }
 [class^=title]{
@@ -44,9 +43,6 @@ img{
 }
 [class*=sub_title]{
     color: var(--grey);
-}
-[class*=title_2]{
-    text-align: center;
 }
 .title_1{
     font-size: 1.6rem;
@@ -62,6 +58,9 @@ img{
 }
 .txt_white{
     color: var(--white);
+}
+.txt_center{
+    text-align: center;
 }
 .margin_top_big{
     margin-top: 3rem;
@@ -128,16 +127,46 @@ footer{
     border-radius: 1.5rem;
     text-transform: uppercase;
     font-size: 0.9rem;
+    display: block;
 }
 
 /**************** nav bar del contenuto ****************/
 .nav_content li a{
-    padding: 0 1rem;
+    padding: 0 0.6rem;
     text-transform: uppercase;
 }
 
-/**************** sezione brani riprodotti di recente ****************/
+/**************** sezione delle playlist in evidenza ****************/
 .card{
-    width: calc(100% / 6 - 1rem);
+    width: calc(100% / 6);
     padding-right: 1rem;
+}
+
+#famous_artists .card img{
+    border-radius: 50%;
+}
+.inner_content section:last-child{
+    margin-bottom: 4rem;
+}
+ 
+/**************** media query ****************/
+@media screen and (max-width:992px){
+    :root{
+        font-size: 0.9rem;
+    }
+    .card{
+        width: 25%;
+    }
+    .cards.flex, .nav_content .flex{
+        flex-wrap: wrap;
+    }
+    .nav_content li{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .card{
+        width: 50%;
+    }
 }
