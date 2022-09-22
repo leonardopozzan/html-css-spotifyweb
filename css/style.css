@@ -36,6 +36,9 @@ img{
 .j_center{
     justify-content: center;
 }
+.j_between{
+    justify-content: space-between;
+}
 .a_it_center{
     align-items: center;
 }
@@ -75,8 +78,17 @@ img{
 .margin_top_sm{
     margin-top: 0.75rem;
 }
+.margin_bottom_sm{
+    margin-bottom: 0.75rem;
+}
 .margin_top_xsm{
     margin-top: 0.4rem;
+}
+.margin_right_sm{
+    margin-right: 0.75rem;
+}
+.margin_left_sm{
+    margin-left: 0.75rem;
 }
 
 
@@ -85,12 +97,10 @@ img{
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
-    background-color: pink;
 }
 main{
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: orange;
 }
 footer{
     width: 100%;
@@ -158,42 +168,32 @@ footer{
 
 /**************** nav bar laterale****************/
 .nav_bar .logo_box svg{
-    height: 50px;
+    height: 3rem;
 }
 .nav_bar .logo_box_small{
     display: none;
-}
-.nav_bar section .icon_box:first-child{
-    margin-top: 16px;
 }
 .nav_bar .icon_box path, .download_box path{
     fill: var(--grey);
 }
 .nav_bar .icon_box svg, .logo_box_small svg{
-    height: 30px;
-    margin-right: 10px;
+    height: 1.9rem;
 }
 .nav_bar .plus{
     display: inline-block;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
+    height: 1.9rem;
+    width: 1.9rem;
+    line-height: 1.9rem;
     font-size: 2.5rem;
     background-color: var(--grey);
-    margin-right: 10px;
 }
 .nav_bar #personal_playlist{
     flex-grow: 3;
     min-height: 150px;
     overflow-y: auto;
 }
-.nav_bar #profile{
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-}
 .nav_bar .download_box svg{
-    height: 1rem;
-    margin-right: 10px;
+    height: 1.1rem;
 }
 .nav_bar .download_box{
     border-bottom: 1px solid var(--grey);
@@ -201,9 +201,15 @@ footer{
 }
 .nav_bar .profile_box svg{
     height: 1.3rem;
+    width: 1.3rem;
     background-color: var(--grey);
     border-radius: 50%;
-    margin-right: 10px;
+}
+
+/**************** barra player footer ****************/
+
+footer .img_box{
+    width: 50px;
 }
 
 /**************** media query ****************/
@@ -211,9 +217,13 @@ footer{
     :root{
         font-size: 0.9rem;
     }
+
+    /* ridotto numero di card a 4 */
     .card{
         width: 25%;
     }
+
+    /* modifica della nav_content */
     .cards.flex, .nav_content .flex{
         flex-wrap: wrap;
     }
@@ -223,15 +233,27 @@ footer{
 }
 
 @media screen and (max-width:768px){
+
+    /* ridotto a 2 il numero di carte */
     .card{
         width: 50%;
     }
 }
 
 @media screen and (max-width: 576px){
+
+    /* common nella versione mobile */
     .d_none_sm{
         display: none;
     }
+    .a_it_center_sm{
+        align-items: center;
+    }
+    .f_grow_sm{
+        flex-grow: 3;
+    }
+
+    /* modifiche sulla nav bar laterale */
     .nav_bar .logo_box_small{
         display: block;
     }
@@ -242,19 +264,14 @@ footer{
         width: 50px;
         padding: 0.5rem 0.5rem 0 0.5rem;
     }
+
+    /* modifica delle lunghezza dei riquadri in base alla nuova nav bar */
     .upgrade{
         width: calc(100% - 50px);
     }
     .main_content{
         width: calc(100% - 50px);
     }
-    .nav_bar .icon_box svg, .logo_box_small svg, .nav_bar .download_box svg, .nav_bar .profile_box svg{
-        margin-right: 0px;
-    }
-    .a_it_center_sm{
-        align-items: center;
-    }
-    .f_grow_sm{
-        flex-grow: 3;
-    }
+    
+    
 }
