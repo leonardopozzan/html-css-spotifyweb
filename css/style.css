@@ -161,8 +161,9 @@ footer{
     width: calc(100% / 6);
     padding-right: 1rem;
 }
-#famous_artists .card img{
+#famous_artists .card .img_box{
     border-radius: 50%;
+    overflow: hidden;
 }
 .inner_content section:last-child{
     margin-bottom: 4rem;
@@ -224,6 +225,7 @@ footer .icon_md{
 }
 footer #seconds{
     font-size: 0.8rem;
+    position: relative;
 }
 footer #bar_seconds, footer #bar_volume{
     height: 7px;
@@ -231,7 +233,8 @@ footer #bar_seconds, footer #bar_volume{
     border-radius: 10px;
     overflow: hidden;
 }
-footer #bar_seconds::-webkit-progress-value, footer #bar_volume::-webkit-progress-value{
+footer #bar_seconds::-webkit-progress-value, 
+footer #bar_volume::-webkit-progress-value{
     background-color: var(--light_grey);
 }
 footer #bar_seconds{
@@ -241,6 +244,52 @@ footer #bar_volume{
     width: 8vw;
 }
 
+/**************** animazioni e hover ****************/
+.hov_pointer:hover{
+    cursor: pointer;
+}
+.hov_scale, .hov_white, 
+#nav_home path, 
+#nav_home [class*=title], 
+#new_playlist .plus, 
+#new_playlist .sub_title_1,
+#profile .sub_title_2,
+#profile path,
+#song .sub_title_2,
+footer #bar_seconds::-webkit-progress-value, 
+footer #bar_volume::-webkit-progress-value
+{
+    transition: 0.4s;
+}
+.hov_white:hover,
+#nav_home div:hover,
+#nav_home div:hover [class*=title],
+#new_playlist:hover .sub_title_1,
+#profile div:first-child:hover .sub_title_2,
+#song .sub_title_2:hover
+{
+    color: var(--white);
+    cursor: pointer;
+}
+.hov_scale:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#nav_home div:hover path,
+#profile div:first-child:hover path
+{
+    fill: var(--white);
+}
+#new_playlist:hover .plus{
+    background-color: var(--white);
+}
+#song .sub_title_2:hover{
+    text-decoration: underline;
+} 
+footer #bar_seconds:hover::-webkit-progress-value, 
+footer #bar_volume:hover::-webkit-progress-value{
+    background-color: var(--lime);
+}
 /**************** media query ****************/
 @media screen and (max-width:992px){
     :root{

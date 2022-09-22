@@ -29,7 +29,7 @@
                 </div>
 
                 <!-- sezione con comandi di home, ricerca e libreria -->
-                <section class="f_grow_sm margin_top_md">
+                <section id="nav_home" class="f_grow_sm margin_top_md">
                     <div class="icon_box flex a_it_center">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
                         <span class="sub_title_2 d_none_sm margin_left_sm">Home</span>
@@ -47,7 +47,7 @@
                 <!-- sezione delle classi personali -->
                 <section class="margin_top_md d_none_sm">
                     <div class="title_2">PLAYLIST</div>
-                    <div class="margin_top_sm flex a_it_center">
+                    <div id="new_playlist" class="margin_top_sm flex a_it_center">
                         <span class="plus txt_center">+</span>
                         <span class="sub_title_1 margin_left_sm">Crea Playlist</span>
                     </div>                    
@@ -55,14 +55,14 @@
                 
                 <section id="personal_playlist" class="d_none_sm">
                     <ul>
-                        <li class="sub_title_2 margin_top_md">Nome Playlist</li>
-                        <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
-                        <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
-                        <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
-                        <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
-                        <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
-                        <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
-                        <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_md hov_white">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_sm hov_white">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_sm hov_white">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_sm hov_white">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_sm hov_white">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_sm hov_white">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_sm hov_white">Nome Playlist</li>
+                        <li class="sub_title_2 margin_top_sm hov_white">Nome Playlist</li>
                     </ul>
                 </section>
 
@@ -72,7 +72,7 @@
                         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#ffffff" fill-rule="evenodd"/></svg>
                         <span class="sub_title_2 d_none_sm margin_left_sm">install app</span>
                     </div>
-                    <div class="profile_box flex a_it_center margin_top_sm">
+                    <div class="profile_box flex a_it_center margin_top_sm hov_pointer">
                         <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg"><title>User Icon</title><path d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z" fill="#ffffff" fill-rule="evenodd"/></svg>
                         <span class="title_2 d_none_sm margin_left_sm">John Doe</span>
                     </div>
@@ -85,7 +85,7 @@
 
                 <!-- barra opaca superiore -->
                 <aside class="upgrade flex a_it_center">
-                    <div><a href="#">effettua l&#39;upgrade</a></div>
+                    <div class="hov_scale"><a href="#">effettua l&#39;upgrade</a></div>
                 </aside>
 
                 <!-- sezione dei contenuti multimediali -->
@@ -94,12 +94,12 @@
                     <!-- barra di navigazione del contenuto tra podcast, in evidenza, classifiche ecc. -->
                     <nav class="nav_content">
                         <ul class="flex j_center">
-                            <li><a href="#" class="sub_title_1">in evidenza</a></li>
-                            <li><a href="#" class="sub_title_1">podcast</a></li>
-                            <li><a href="#" class="sub_title_1">classifiche</a></li>
-                            <li><a href="#" class="sub_title_1">generi e mood</a></li>
-                            <li><a href="#" class="sub_title_1">nuove uscite</a></li>
-                            <li><a href="#" class="sub_title_1">scopri</a></li>
+                            <li><a href="#" class="sub_title_1 hov_white">in evidenza</a></li>
+                            <li><a href="#" class="sub_title_1 hov_white">podcast</a></li>
+                            <li><a href="#" class="sub_title_1 hov_white">classifiche</a></li>
+                            <li><a href="#" class="sub_title_1 hov_white">generi e mood</a></li>
+                            <li><a href="#" class="sub_title_1 hov_white">nuove uscite</a></li>
+                            <li><a href="#" class="sub_title_1 hov_white">scopri</a></li>
                         </ul>
                     </nav>
 
@@ -201,39 +201,40 @@
         <footer class="flex a_it_center j_between">
 
             <!-- sezione dell'icona e del nome brano -->
-            <section class="flex a_it_center side_icon margin_right_sm margin_left_sm">
-                <div class="img_box"><img src="img/sinister.jpeg"></div>
+            <section id="song" class="flex a_it_center side_icon margin_right_sm margin_left_sm">
+                <div class="img_box hov_pointer"><img src="img/sinister.jpeg"></div>
                 <div class="margin_left_sm margin_right_sm d_none_sm">
                     <div class="title_2">Sinister</div>
                     <span class="sub_title_2">Brano Nome</span>
                 </div>
                 <div class="margin_left_sm">
-                    <span class="icon_box"><i class="fa-regular fa-heart"></i></span>
-                    <span class="icon_box"><i class="fa-regular fa-folder"></i></span>
+                    <span class="icon_box"><i class="fa-regular fa-heart hov_white"></i></span>
+                    <span class="icon_box"><i class="fa-regular fa-folder hov_white"></i></span>
                 </div>
             </section>
             
             <!-- barra player della musica -->
             <section class="txt_white central_icon txt_center margin_left_sm margin_right_sm">
                 <div class="flex a_it_center j_center">
-                    <i class="fa-solid fa-shuffle icon_sm"></i>
-                    <i class="fa-solid fa-backward icon_sm margin_left_sm margin_right_sm"></i>
-                    <i class="fa-regular fa-circle-play icon_md margin_left_sm margin_right_sm"></i>
-                    <i class="fa-solid fa-forward icon_sm margin_left_sm margin_right_sm"></i>
-                    <i class="fa-solid fa-rotate-right icon_sm "></i>
+                    <i class="fa-solid fa-shuffle icon_sm hov_scale"></i>
+                    <i class="fa-solid fa-backward icon_sm margin_left_sm margin_right_sm hov_scale"></i>
+                    <i class="fa-regular fa-circle-play icon_md margin_left_sm margin_right_sm hov_scale"></i>
+                    <i class="fa-solid fa-forward icon_sm margin_left_sm margin_right_sm hov_scale"></i>
+                    <i class="fa-solid fa-rotate-right icon_sm hov_scale"></i>
                 </div>
                 <div id="seconds" class="margin_top_xsm flex a_it_center j_center">
                     <span class="margin_right_sm">0:25</span>
-                    <progress id="bar_seconds" class="d_none_sm" value="11" max="100"></progress>
+                    <progress id="bar_seconds" class="d_none_sm hov_pointer" value="11" max="100"></progress>
                     <span class="margin_left_sm">4:35</span>
                 </div>   
             </section>
 
+            <!-- barra del volume e altre funzioni -->
             <section class="txt_white side_sicon flex a_it_center margin_left_sm margin_right_sm">
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-display margin_left_sm"></i>
-                <i class="fa-solid fa-volume-high margin_left_sm margin_right_sm"></i>
-                <progress id="bar_volume" class="d_none_sm" value="35" max="100"></progress>
+                <i class="fa-solid fa-list-ul hov_pointer"></i>
+                <i class="fa-solid fa-display margin_left_sm hov_pointer"></i>
+                <i class="fa-solid fa-volume-high margin_left_sm margin_right_sm hov_pointer"></i>
+                <progress id="bar_volume" class="d_none_sm hov_pointer" value="35" max="100"></progress>
             </section>
 
         </footer>
