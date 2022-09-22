@@ -13,8 +13,9 @@ html{
     --dark_blue: rgba(20, 25, 34, 1);
     --dark_grey: rgba(40, 40, 40, 1);
     --white: rgba(255, 255, 255, 1);
-    --grey: rgba(113, 113, 113, 1);
+    --grey: rgba(113, 113, 113, 1); 
     --lime: rgba(173, 255, 47, 1);
+    --light_grey: #c1c1c1;
 }
 /**************** Common ****************/
 a{
@@ -103,6 +104,7 @@ main{
     height: calc(100vh - 80px);
 }
 footer{
+    min-width: 450px;
     width: 100%;
     height: 80px;
     position: fixed;
@@ -207,9 +209,36 @@ footer{
 }
 
 /**************** barra player footer ****************/
-
 footer .img_box{
-    width: 50px;
+    width: 3rem;
+    flex-shrink: 0;
+}
+footer .icon_box{
+    color: var(--grey);
+}
+footer .icon_sm{
+    font-size: 1.1rem;
+}
+footer .icon_md{
+    font-size: 1.7rem;
+}
+footer #seconds{
+    font-size: 0.8rem;
+}
+footer #bar_seconds, footer #bar_volume{
+    height: 7px;
+    background-color:var(--grey) ;
+    border-radius: 10px;
+    overflow: hidden;
+}
+footer #bar_seconds::-webkit-progress-value, footer #bar_volume::-webkit-progress-value{
+    background-color: var(--light_grey);
+}
+footer #bar_seconds{
+    width: 30vw;
+}
+footer #bar_volume{
+    width: 8vw;
 }
 
 /**************** media query ****************/

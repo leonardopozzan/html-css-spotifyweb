@@ -199,9 +199,43 @@
             </section>
         </main>
         <footer class="flex a_it_center j_between">
-            <section>
+
+            <!-- sezione dell'icona e del nome brano -->
+            <section class="flex a_it_center side_icon margin_right_sm margin_left_sm">
                 <div class="img_box"><img src="img/sinister.jpeg"></div>
+                <div class="margin_left_sm margin_right_sm d_none_sm">
+                    <div class="title_2">Sinister</div>
+                    <span class="sub_title_2">Brano Nome</span>
+                </div>
+                <div class="margin_left_sm">
+                    <span class="icon_box"><i class="fa-regular fa-heart"></i></span>
+                    <span class="icon_box"><i class="fa-regular fa-folder"></i></span>
+                </div>
             </section>
+            
+            <!-- barra player della musica -->
+            <section class="txt_white central_icon txt_center margin_left_sm margin_right_sm">
+                <div class="flex a_it_center j_center">
+                    <i class="fa-solid fa-shuffle icon_sm"></i>
+                    <i class="fa-solid fa-backward icon_sm margin_left_sm margin_right_sm"></i>
+                    <i class="fa-regular fa-circle-play icon_md margin_left_sm margin_right_sm"></i>
+                    <i class="fa-solid fa-forward icon_sm margin_left_sm margin_right_sm"></i>
+                    <i class="fa-solid fa-rotate-right icon_sm "></i>
+                </div>
+                <div id="seconds" class="margin_top_xsm flex a_it_center j_center">
+                    <span class="margin_right_sm">0:25</span>
+                    <progress id="bar_seconds" class="d_none_sm" value="11" max="100"></progress>
+                    <span class="margin_left_sm">4:35</span>
+                </div>   
+            </section>
+
+            <section class="txt_white side_sicon flex a_it_center margin_left_sm margin_right_sm">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display margin_left_sm"></i>
+                <i class="fa-solid fa-volume-high margin_left_sm margin_right_sm"></i>
+                <progress id="bar_volume" class="d_none_sm" value="35" max="100"></progress>
+            </section>
+
         </footer>
     </div>
 </body>
