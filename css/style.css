@@ -30,6 +30,9 @@ img{
 .flex{
     display: flex;
 }
+.f_column{
+    flex-direction: column;
+}
 .j_center{
     justify-content: center;
 }
@@ -179,17 +182,14 @@ footer{
     background-color: var(--grey);
     margin-right: 10px;
 }
-.nav_bar .personal_playlist ul{
+.nav_bar #personal_playlist{
+    flex-grow: 3;
+    min-height: 150px;
     overflow-y: auto;
-    height: 250px;
 }
 .nav_bar #profile{
-    position: fixed;
-    bottom: 80px;
-    left: 0;
-    background-color: var(--black);
-    width: 230px;
-    padding: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 .nav_bar .download_box svg{
     height: 1rem;
@@ -242,11 +242,6 @@ footer{
         width: 50px;
         padding: 0.5rem 0.5rem 0 0.5rem;
     }
-    .nav_bar #profile{
-        width: 50px;
-        padding: 0.5rem;
-        text-align: center;
-    }
     .upgrade{
         width: calc(100% - 50px);
     }
@@ -256,8 +251,10 @@ footer{
     .nav_bar .icon_box svg, .logo_box_small svg, .nav_bar .download_box svg, .nav_bar .profile_box svg{
         margin-right: 0px;
     }
-    .flex_sm{
-        display: flex;
-        flex-direction: column;
+    .a_it_center_sm{
+        align-items: center;
+    }
+    .f_grow_sm{
+        flex-grow: 3;
     }
 }

@@ -17,7 +17,7 @@
         <main class="flex"> 
 
             <!-- barra di navigazione laterale -->
-            <nav class="nav_bar flex_sm a_it_center">
+            <nav class="nav_bar flex f_column a_it_center_sm">
 
                 <!-- logo grande di spotify -->
                 <div class="logo_box d_none_sm">
@@ -29,7 +29,7 @@
                 </div>
 
                 <!-- sezione con comandi di home, ricerca e libreria -->
-                <section>
+                <section class="f_grow_sm">
                     <div class="icon_box flex a_it_center">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
                         <span class="sub_title_2 d_none_sm">Home</span>
@@ -45,12 +45,15 @@
                 </section>
 
                 <!-- sezione delle classi personali -->
-                <section class="personal_playlist margin_top_md d_none_sm">
+                <section class="margin_top_md d_none_sm">
                     <div class="title_2">PLAYLIST</div>
                     <div class="margin_top_sm flex a_it_center">
                         <span class="plus txt_center">+</span>
                         <span class="sub_title_1">Crea Playlist</span>
-                    </div>
+                    </div>                    
+                </section>
+                
+                <section id="personal_playlist" class="d_none_sm">
                     <ul>
                         <li class="sub_title_2 margin_top_md">Nome Playlist</li>
                         <li class="sub_title_2 margin_top_sm">Nome Playlist</li>
@@ -196,6 +199,7 @@
             </section>
         </main>
         <footer>
+            
         </footer>
     </div>
 </body>
