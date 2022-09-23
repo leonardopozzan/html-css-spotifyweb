@@ -260,6 +260,7 @@ footer{
 }
 .nav_bar #nav_home div:first-child{
     border-left: 3px solid var(--lime);
+    margin-left: -3px;
 }
 
 /**************** barra player footer ****************/
@@ -526,6 +527,17 @@ footer #bar_volume:hover::-webkit-progress-value{
 }
 #page-1 .font_bold{
     font-weight: 700;
+}
+/**************** contenuto della pagina ****************/
+#page-1 .inner_content{
+    padding: 0;
+}
+#page-1 .playlist_title{
+    width: 100%;
+    height: 350px;
+    background-image: url('../img/bandjpg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /**************** footer ****************/
