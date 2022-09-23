@@ -14,7 +14,7 @@ html{
     --dark_grey: rgba(40, 40, 40, 1);
     --white: rgba(255, 255, 255, 1);
     --grey: rgba(113, 113, 113, 1); 
-    --lime: rgba(173, 255, 47, 1);
+    --lime: #39ff14;
     --light_grey: #c1c1c1;
 }
 ::-webkit-scrollbar {
@@ -35,6 +35,7 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background:  rgb(46, 189, 89, 0.5);  
 }
+
 /**************** Common ****************/
 a{
     text-decoration: none;
@@ -110,7 +111,6 @@ img{
     margin-left: 0.75rem;
 }
 
-
 /**************** Layout sezioni ****************/
 .wrapper{
     width: 100%;
@@ -176,6 +176,14 @@ footer{
 .nav_content li a{
     padding: 0 0.6rem;
     text-transform: uppercase;
+}
+.nav_content ul a.active::after{
+    content:'';
+    width: 50%;
+    height: 3px;
+    display: block;
+    background-color: var(--lime);
+    margin: auto;
 }
 
 /**************** sezione delle playlist in evidenza ****************/
@@ -251,6 +259,9 @@ footer{
     background-color: var(--grey);
     border-radius: 50%;
 }
+.nav_bar #nav_home div:first-child{
+    border-left: 3px solid var(--lime);
+}
 
 /**************** barra player footer ****************/
 footer .img_box{
@@ -285,7 +296,9 @@ footer #bar_seconds{
 footer #bar_volume{
     width: 8vw;
 }
+
 /**************** animazioni e hover ****************/
+
 .hov_pointer:hover{
     cursor: pointer;
 }
@@ -344,6 +357,95 @@ footer #bar_volume:hover::-webkit-progress-value{
     transform: scale(1.1);
 }
 
+/* linea neon rainbow */
+.line { 
+    height: 5px;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+  
+    -webkit-animation: rainbow 13s ease infinite;
+    -z-animation: rainbow 13s ease infinite;
+    -o-animation: rainbow 13s ease infinite;
+    animation: rainbow 13s ease infinite;
+}
+  
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+/* animazione sui pulsanti di home, cerca e libreria */
+#nav_home .icon_box::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+#nav_home .icon_box:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#nav_home .icon_box::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: var(--grey);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+#nav_home .icon_box {
+  position: relative;
+}
+
+/* animazione sul pulsante di upgrade */
+#upgrade_btn:hover {
+    animation: wiggle 2s linear infinite;
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 /**************** media query ****************/
 @media screen and (max-width:992px){
     :root{
@@ -404,6 +506,6 @@ footer #bar_volume:hover::-webkit-progress-value{
     .main_content{
         width: calc(100% - 50px);
     }
-    
-    
 }
+
+/**************** page 2 ****************/

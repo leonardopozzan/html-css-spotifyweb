@@ -10,6 +10,9 @@
     <title>Spotify</title>
 </head>
 <body>
+
+    <!-- EASTER EGG SULLA CANZONE DI GANGNAM STYLE --><!-- EASTER EGG SULLA CANZONE DI GANGNAM STYLE --><!-- EASTER EGG SULLA CANZONE DI GANGNAM STYLE -->
+
     <!-- contenitore di tutta la pagina -->
     <div class="wrapper">
 
@@ -85,7 +88,7 @@
 
                 <!-- barra opaca superiore -->
                 <aside class="upgrade flex a_it_center">
-                    <div class="hov_scale"><a href="#">effettua l&#39;upgrade</a></div>
+                    <div id="upgrade_btn"><a href="#">effettua l&#39;upgrade</a></div>
                 </aside>
 
                 <!-- sezione dei contenuti multimediali -->
@@ -93,8 +96,8 @@
 
                     <!-- barra di navigazione del contenuto tra podcast, in evidenza, classifiche ecc. -->
                     <nav class="nav_content">
-                        <ul class="flex j_center">
-                            <li><a href="#" class="sub_title_1 hov_white">in evidenza</a></li>
+                        <ul class="flex j_center txt_center">
+                            <li><a href="#" class="sub_title_1 hov_white active">in evidenza</a></li>
                             <li><a href="#" class="sub_title_1 hov_white">podcast</a></li>
                             <li><a href="#" class="sub_title_1 hov_white">classifiche</a></li>
                             <li><a href="#" class="sub_title_1 hov_white">generi e mood</a></li>
@@ -145,12 +148,12 @@
                             </div>
                             <div class="card margin_top_md">
                                 <div class="img_box">
-                                    <img src="img/cure.jpeg">
+                                    <img src="img/gangnam-style.jfif">
                                     <div class="play_btn"><i class="fa-regular fa-circle-play"></i></div>
                                     <div class="overlay"></div>
                                 </div>
-                                <div class="title_2 margin_top_sm">A cure for wellness</div>
-                                <div class="sub_title_2 margin_top_sm">Subtitle</div>
+                                <div><a href="pages/page-2.html" class="title_2 margin_top_sm">Gagnam Style</a></div>
+                                <div ><a href="pages/page-2.html" class="sub_title_2 margin_top_sm">Subtitle</a></div>
                             </div>
                             <div class="card margin_top_md">
                                 <div class="img_box">
@@ -257,6 +260,7 @@
                 <progress id="bar_volume" class="hov_pointer d_none_sm" value="35" max="100"></progress> 
             </section>
 
+            <div class="line"></div>
         </footer>
     </div>
 </body>
