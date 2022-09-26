@@ -368,13 +368,11 @@ footer #bar_volume:hover::-webkit-progress-value{
     position: absolute;
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 1800% 1800%;
-  
     -webkit-animation: rainbow 13s ease infinite;
     -z-animation: rainbow 13s ease infinite;
     -o-animation: rainbow 13s ease infinite;
     animation: rainbow 13s ease infinite;
 }
-  
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
@@ -398,25 +396,25 @@ footer #bar_volume:hover::-webkit-progress-value{
 
 /* animazione sui pulsanti di home, cerca e libreria */
 #nav_home .icon_box::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
+    transform: scaleX(0);
+    transform-origin: bottom right;
 }
 #nav_home .icon_box:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 #nav_home .icon_box::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background: var(--grey);
-  z-index: -1;
-  transition: transform .3s ease;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: var(--grey);
+    z-index: -1;
+    transition: transform .3s ease;
 }
 #nav_home .icon_box {
-  position: relative;
+    position: relative;
 }
 
 /* animazione sul pulsante di upgrade */
@@ -424,27 +422,27 @@ footer #bar_volume:hover::-webkit-progress-value{
     animation: wiggle 2s linear infinite;
 }
 @keyframes wiggle {
-  0%, 7% {
+    0%, 7% {
     transform: rotateZ(0);
-  }
-  15% {
+    }
+    15% {
     transform: rotateZ(-15deg);
-  }
-  20% {
+    }
+    20% {
     transform: rotateZ(10deg);
-  }
-  25% {
+    }
+    25% {
     transform: rotateZ(-10deg);
-  }
-  30% {
+    }
+    30% {
     transform: rotateZ(6deg);
-  }
-  35% {
+    }
+    35% {
     transform: rotateZ(-4deg);
-  }
-  40%, 100% {
+    }
+    40%, 100% {
     transform: rotateZ(0);
-  }
+    }
 }
 /**************** media query ****************/
 @media screen and (max-width:992px){
@@ -538,6 +536,10 @@ footer #bar_volume:hover::-webkit-progress-value{
     background-image: url('../img/bandjpg.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+#page-1 .h1{
+    
 }
 
 /**************** footer ****************/
